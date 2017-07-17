@@ -1,0 +1,30 @@
+package logica;
+import java.util.Calendar;
+
+public class Control extends Registros{
+
+	private int peso;
+	private int altura;
+
+	public Control (Calendar pFecha, String pComentario, int peso, int altura)
+	{	
+		super (pFecha, pComentario);
+		this.peso = peso;
+		this.altura = altura;
+	}
+	public int getPeso() {
+		return peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+
+	public int getAltura() {
+		return altura;
+	}
+
+	public void setAltura(int altura) {
+		this.altura = altura;
+	}
+}
